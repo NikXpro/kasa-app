@@ -47,7 +47,7 @@ export const Home = () => {
         <Banner
           image="https://source.unsplash.com/1600x900/?nature&compress=true"
           title="test"
-          brightness={50}
+          brightness={40}
         />
         <div className="logements-list">
           {logements.map((logement) => (
