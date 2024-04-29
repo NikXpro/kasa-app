@@ -1,9 +1,9 @@
 import { createElement } from "react";
 
-//import Exemple from "@assets/icons/Exemple.svg?react";
+import logo from "@assets/icons/logo.svg?react";
 
 const icons = {
-  //Exemple,
+  logo,
 };
 
 type IconProps = {
