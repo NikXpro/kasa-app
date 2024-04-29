@@ -1,4 +1,5 @@
 import "@fontsource/montserrat";
+import { About } from "@pages/About";
 import { Home } from "@pages/Home";
 import React from "react";
 import ReactDOM from "react-dom/client";
@@ -9,6 +10,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </Router>
   </React.StrictMode>
