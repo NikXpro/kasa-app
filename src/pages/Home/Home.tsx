@@ -1,5 +1,5 @@
 import { Layout } from "@components/Layout";
-import { Banner, Tag } from "@components/Ui";
+import { Banner, Tag, Thumb } from "@components/Ui";
 
 export const Home = () => {
   return (
@@ -11,9 +11,12 @@ export const Home = () => {
           brightness={50}
         />
         <Tag name="test" />
-        <div>
-          <h1>Home</h1>
-        </div>
+
+        <Thumb
+          linkUrl="/test"
+          image="https://source.unsplash.com/1600x900/?bedroom&compress=true"
+          title="test"
+        />
       </Layout>
     </>
   );
