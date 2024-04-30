@@ -1,0 +1,10 @@
+@import "../../../../variables.scss";
+
+.icon {
+  &.star-empty {
+    fill: $rate-color;
+  }
+  &.star-filled {
+    fill: $accent-color;
+  }
+}
