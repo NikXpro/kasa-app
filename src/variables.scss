@@ -3,6 +3,7 @@ $secondary-color: #f6f6f6;
 $accent-color: #ff6060;
 $black-color: #000000;
 $white-color: #ffffff;
+$rate-color: #e3e3e3;
 
 :export {
   primary-color: $primary-color;
@@ -10,4 +11,5 @@ $white-color: #ffffff;
   accent-color: $accent-color;
   black-color: $black-color;
   white-color: $white-color;
+  rate-color: $rate-color;
 }
