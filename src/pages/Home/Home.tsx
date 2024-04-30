@@ -1,45 +1,10 @@
+import { getAccommodationsList } from "@/Api";
 import { Layout } from "@components/Layout";
 import { Banner, Carousel, Host, Thumb } from "@components/Ui";
 import "./Home.scss";
+
 export const Home = () => {
-  const logements = [
-    {
-      id: 1,
-      title: "test",
-      image: "https://source.unsplash.com/1600x900/?bedroom&compress=true",
-      linkUrl: "/test",
-    },
-    {
-      id: 2,
-      title: "test",
-      image: "https://source.unsplash.com/1600x900/?bedroom&compress=true",
-      linkUrl: "/test",
-    },
-    {
-      id: 3,
-      title: "test",
-      image: "https://source.unsplash.com/1600x900/?bedroom&compress=true",
-      linkUrl: "/test",
-    },
-    {
-      id: 4,
-      title: "test",
-      image: "https://source.unsplash.com/1600x900/?bedroom&compress=true",
-      linkUrl: "/test",
-    },
-    {
-      id: 5,
-      title: "test",
-      image: "https://source.unsplash.com/1600x900/?bedroom&compress=true",
-      linkUrl: "/test",
-    },
-    {
-      id: 6,
-      title: "test",
-      image: "https://source.unsplash.com/1600x900/?bedroom&compress=true",
-      linkUrl: "/test",
-    },
-  ];
+  const logements = getAccommodationsList();
 
   return (
     <>
@@ -66,8 +31,8 @@ export const Home = () => {
             <Thumb
               key={logement.id}
               title={logement.title}
-              image={logement.image}
-              linkUrl={logement.linkUrl}
+              image={logement.cover}
+              linkUrl={"logement/" + logement.id.toString()}
             />
           ))}
         </div>
