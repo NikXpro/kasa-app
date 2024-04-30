@@ -1,6 +1,6 @@
 import data from "./assets/data.json";
 
-export const getAccommodationById = (id) => {
+export const getAccommodationById = (id: string) => {
   return data.find((item) => item.id === id);
 };
 
