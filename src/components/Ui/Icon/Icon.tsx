@@ -1,11 +1,13 @@
 import { createElement } from "react";
 
 import arrow from "@assets/icons/arrow.svg?react";
+import arrow_big from "@assets/icons/arrow_big.svg?react";
 import logo from "@assets/icons/logo.svg?react";
 import star from "@assets/icons/star.svg?react";
 
 const icons = {
   arrow,
+  arrow_big,
   logo,
   star,
 };
