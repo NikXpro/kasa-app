@@ -1,5 +1,5 @@
 import { Layout } from "@components/Layout";
-import { Banner, Thumb } from "@components/Ui";
+import { Banner, Host, Thumb } from "@components/Ui";
 import "./Home.scss";
 export const Home = () => {
   const logements = [
@@ -48,6 +48,10 @@ export const Home = () => {
           image="https://source.unsplash.com/1600x900/?nature&compress=true"
           title="test"
           brightness={40}
+        />
+        <Host
+          name="Alexandre Dumas"
+          picture="https://source.unsplash.com/100x100/?portrait&compress=true"
         />
         <div className="logements-list">
           {logements.map((logement) => (
