@@ -1,5 +1,5 @@
 import { Layout } from "@components/Layout";
-import { Banner, Host, Thumb } from "@components/Ui";
+import { Banner, Carousel, Host, Thumb } from "@components/Ui";
 import "./Home.scss";
 export const Home = () => {
   const logements = [
@@ -48,6 +48,14 @@ export const Home = () => {
           image="https://source.unsplash.com/1600x900/?nature&compress=true"
           title="test"
           brightness={40}
+        />
+        <Carousel
+          images={[
+            "https://source.unsplash.com/1600x900/?nature&compress=true",
+            "https://source.unsplash.com/1600x900/?bedroom&compress=true",
+            "https://source.unsplash.com/1600x900/?kitchen&compress=true",
+            "https://source.unsplash.com/1600x900/?portrait&compress=true",
+          ]}
         />
         <Host
           name="Alexandre Dumas"
