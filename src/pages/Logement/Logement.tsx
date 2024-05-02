@@ -7,10 +7,8 @@ import "./Logement.scss";
 
 export const Logement = () => {
   const { id } = useParams();
-  console.log(id);
 
   const logementData = getAccommodationById(id ?? "");
-
   if (!logementData) {
     return <Notfound />;
   }
