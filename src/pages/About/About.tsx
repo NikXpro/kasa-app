@@ -5,7 +5,7 @@ export const About = () => {
   return (
     <>
       <Layout pageActive="about">
-        <Banner image="/about_banner.jpg" brightness={70} />
+        <Banner image="/images/about_banner.jpg" brightness={70} />
         <div className="information">
           <Accordion title="Fiabilité">
             <p>

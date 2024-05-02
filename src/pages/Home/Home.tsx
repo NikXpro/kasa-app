@@ -10,7 +10,7 @@ export const Home = () => {
     <>
       <Layout pageActive="home">
         <Banner
-          image="/home_banner.jpg"
+          image="/images/home_banner.jpg"
           title="Chez vous, partout et ailleurs"
           brightness={40}
         />
