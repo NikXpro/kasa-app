@@ -10,8 +10,8 @@ export const Home = () => {
     <>
       <Layout pageActive="home">
         <Banner
-          image="https://source.unsplash.com/1600x900/?nature&compress=true"
-          title="test"
+          image="/home_banner.jpg"
+          title="Chez vous, partout et ailleurs"
           brightness={40}
         />
         <div className="logements-list">
