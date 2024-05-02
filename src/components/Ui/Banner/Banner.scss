@@ -34,3 +34,37 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+  .banner {
+    height: 9.9375rem;
+    border-radius: 1.1rem;
+
+    .banner-content {
+      padding: 1rem;
+      .banner-title {
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+        line-height: 100%; /* 1.5rem */
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 6.9375rem;
+    border-radius: 0.625rem;
+
+    .banner-content {
+      padding: 1rem;
+      .banner-title {
+        font-size: 1.3rem;
+        font-weight: 700;
+        text-align: center;
+        line-height: 100%; /* 1.5rem */
+      }
+    }
+  }
+}

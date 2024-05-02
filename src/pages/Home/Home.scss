@@ -8,3 +8,21 @@
   border-radius: 1.5625rem;
   background: #f6f6f6;
 }
+
+@media (max-width: 1024px) {
+  .logements-list {
+    padding: 2rem;
+    gap: 1.9rem;
+
+    border-radius: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .logements-list {
+    padding: 0rem;
+    gap: 1.25rem;
+
+    border-radius: 0.625rem;
+  }
+}

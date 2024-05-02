@@ -70,3 +70,13 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+  .thumb {
+    min-width: 15rem;
+    height: 15.9375rem;
+  }
+}
