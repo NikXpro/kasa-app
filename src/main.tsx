@@ -8,7 +8,7 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./index.scss";
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router basename={import.meta.env.VITE_PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/logement/:id" element={<Logement />} />
