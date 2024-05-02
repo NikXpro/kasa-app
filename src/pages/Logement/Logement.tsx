@@ -1,6 +1,6 @@
 import { getAccommodationById } from "@/Api";
 import { Layout } from "@components/Layout";
-import { Accordion, Carousel, Host, Rate } from "@components/Ui";
+import { Accordion, Carousel, Host, Rate, Tag } from "@components/Ui";
 import { Notfound } from "@pages/Notfound";
 import { useParams } from "react-router-dom";
 import "./Logement.scss";
@@ -19,9 +19,16 @@ export const Logement = () => {
         <div className="logement">
           {logementData && <Carousel images={logementData.pictures} />}
           <div className="logement-informations">
-            <div className="logement-info">
-              <h1 className="logement-title">{logementData?.title}</h1>
-              <p className="logement-location">{logementData?.location}</p>
+            <div className="info-container">
+              <div className="logement-info">
+                <h1 className="logement-title">{logementData?.title}</h1>
+                <p className="logement-location">{logementData?.location}</p>
+              </div>
+              <div className="logement-tags">
+                {logementData?.tags.map((tag) => (
+                  <Tag key={tag} name={tag} />
+                ))}
+              </div>
             </div>
             <div className="logement-host-info">
               <Host
