@@ -5,6 +5,10 @@
   font-family: "Montserrat";
 }
 
+html {
+  overflow-y: scroll;
+}
+
 #root {
   display: flex;
   width: 100%;
