@@ -5,7 +5,7 @@ export const Footer = () => {
   return (
     <footer className="footer-container">
       <Icon id="logo" />
-      <p className="rights">© 2020 Kasa. All rights reservedd</p>
+      <p className="rights">© 2020 Kasa. All rights reserved</p>
     </footer>
   );
 };
