@@ -1,6 +1,7 @@
 import { getAccommodationById } from "@/Api";
 import { Layout } from "@components/Layout";
 import { Accordion, Carousel, Host, Rate } from "@components/Ui";
+import { Notfound } from "@pages/Notfound";
 import { useParams } from "react-router-dom";
 import "./Logement.scss";
 
@@ -11,7 +12,7 @@ export const Logement = () => {
   const logementData = getAccommodationById(id ?? "");
 
   if (!logementData) {
-    return <div>Logement not found</div>;
+    return <Notfound />;
   }
 
   return (
