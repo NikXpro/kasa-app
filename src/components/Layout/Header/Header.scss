@@ -30,3 +30,26 @@ header {
     }
   }
 }
+
+@media (max-width: 1024px) {
+  /* Ajoutez vos styles spécifiques pour la tablette ici */
+}
+
+@media (max-width: 768px) {
+  header {
+    .icon {
+      width: 9.0625rem;
+      height: 2.93006rem;
+    }
+
+    .navbar {
+      justify-content: flex-start;
+      gap: 1.5rem;
+      .nav-item {
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 500;
+      }
+    }
+  }
+}

@@ -44,3 +44,46 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+  .carousel {
+    height: 20.9375rem;
+    border-radius: 1rem;
+    .carousel-controler {
+      .next-button {
+        width: 15%;
+        .icon {
+          width: 3.5rem;
+        }
+      }
+      .prev-button {
+        width: 15%;
+        .icon {
+          width: 3.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    height: 15.9375rem;
+    border-radius: 0.625rem;
+
+    .carousel-controler {
+      .next-button {
+        width: 15%;
+        .icon {
+          width: 1.5rem;
+        }
+      }
+      .prev-button {
+        width: 15%;
+        .icon {
+          width: 1.5rem;
+        }
+      }
+    }
+  }
+}

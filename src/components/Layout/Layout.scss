@@ -14,5 +14,26 @@
   flex-direction: column;
   flex: 1 0 0;
   align-self: stretch;
-  gap: 2.68rem;
+  gap: 2.125rem;
+}
+
+@media (max-width: 1024px) {
+  .layout {
+    padding: 1.8rem 3.25rem 2.8125rem;
+    gap: 2.08rem;
+  }
+  .layout-children {
+    gap: 1.7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .layout {
+    padding: 1.25rem 1.25rem 2.8125rem;
+    gap: 1.125rem;
+  }
+
+  .layout-children {
+    gap: 1.38rem;
+  }
 }

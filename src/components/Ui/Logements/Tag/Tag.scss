@@ -19,3 +19,25 @@
     font-weight: 500;
   }
 }
+
+@media (max-width: 1024px) {
+  .tag {
+    padding: 0.1875rem 1.275rem;
+    border-radius: 0.625rem;
+
+    .tag-text {
+      font-size: 0.725rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .tag {
+    padding: 0.1875rem 1.075rem;
+    border-radius: 0.625rem;
+
+    .tag-text {
+      font-size: 0.625rem;
+    }
+  }
+}
