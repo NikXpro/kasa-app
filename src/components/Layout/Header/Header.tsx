@@ -1,4 +1,5 @@
 import { Icon } from "@components/Ui";
+import { Link } from "react-router-dom";
 import "./Header.scss";
 
 type NavItem = {
@@ -7,6 +8,7 @@ type NavItem = {
   path: string;
   newTab?: boolean;
 };
+
 const navList: NavItem[] = [
   { id: "home", name: "Accueil", path: "/" },
   { id: "about", name: "A Propos", path: "/about" },
@@ -22,9 +24,9 @@ export const Header = (props: HeaderProps) => {
       <Icon id="logo" />
       <div className="navbar">
         {navList.map((navItem) => (
-          <a
+          <Link
             key={navItem.id}
-            href={navItem.path}
+            to={navItem.path}
             className={`nav-item ${
               props.pageActive === navItem.id ? "active" : ""
             }`}
@@ -32,7 +34,7 @@ export const Header = (props: HeaderProps) => {
             rel={navItem.newTab ? "noopener noreferrer" : undefined}
           >
             {navItem.name}
-          </a>
+          </Link>
         ))}
       </div>
     </header>
