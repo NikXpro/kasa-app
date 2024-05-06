@@ -42,6 +42,11 @@ export const Carousel = (props: CarouselProps) => {
             <Icon id="arrow_big" />
           </button>
         </div>
+        <div className="carousel-image-number">
+          <p>
+            {currentImageIndex + 1}/{props.images.length}
+          </p>
+        </div>
       </div>
     </>
   );
